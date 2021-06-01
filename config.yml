@@ -1,0 +1,4 @@
+debug: true
+mode: "dev"
+
+addr: ":20200"
