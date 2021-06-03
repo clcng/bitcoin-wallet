@@ -38,6 +38,7 @@ func WalletServ(addr string) error {
 
 	r.Route("/api/wallet", func(r chi.Router) {
 		r.Get("/mnemonic", s.handleGenerateBIP39Mnemonic)
+		r.Post("/hdAddress", s.handleGenerateHDAddress)
 	})
 
 	log.Info().Msgf("wallet service running at %v", addr)

@@ -16,6 +16,9 @@ var (
 	ErrorMap = map[int64]string{
 		1000: "General API Error",
 		1001: "Invalid Input Parameters",
+
+		2001: "Fail to init key manager",
+		2002: "Fail to get path key",
 	}
 )
 
